@@ -1,9 +1,13 @@
 @import "./base/root";
-@import "./base/scrollbar";
 @import "./base/reset";
+@import "./base/typography";
+@import "./base/scrollbar";
+@import "./base/button-page";
 @import "./base/global";
-@import "./base/grid";
 @import "./views/header";
 @import "./views/hero";
 @import "./views/about";
+@import "./views/skills";
 @import "./views/resume";
+@import "./views/contact";
+@import "./views/footer";

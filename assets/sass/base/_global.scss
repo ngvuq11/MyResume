@@ -1,14 +1,20 @@
+/**
+* particles hero
+*/
 #particles-js {
     position: absolute;
-    width: 100%;
+    inset: 0;
+    /* width: 100%;
     height: 100%;
     background-color: var(--background-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    inset: 0;
+    z-index: -1; */
 }
-
+/**
+* container
+*/
 .container {
     width: 100%;
     max-width: 1260px;
@@ -16,7 +22,9 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+/**
+* preloader
+*/
 #preloader {
     position: fixed;
     top: 0;
@@ -26,21 +34,20 @@
     z-index: 9999;
     overflow: hidden;
     background: #fff;
-}
-
-#preloader:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 6px solid #0563bb;
-    border-top-color: #fff;
-    border-bottom-color: #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
+    &:before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid #0563bb;
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: animate-preloader 1s linear infinite;
+        animation: animate-preloader 1s linear infinite;
+    }
 }
 
 @-webkit-keyframes animate-preloader {
@@ -66,58 +73,66 @@
     }
 }
 
+/**
+* section general
+*/
 section {
     padding: 40px 0;
     overflow: hidden;
+    .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+        h2 {
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            color: var(--text-color);
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                width: calc(100% + 50px);
+                height: 3px;
+                /* background: #0563bb; */
+                background: linear-gradient(
+                    90.06deg,
+                    #2cccff -4.45%,
+                    #22dfbf 104.12%
+                );
+
+                bottom: 0;
+            }
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
 }
 .about,
 .resume,
-.skills {
+.skills,
+.contact {
     border-bottom: 0.5px solid #eee;
 }
 .home {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
-.section-title {
-    text-align: center;
-    padding-bottom: 30px;
-}
-.section-title h2 {
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #45505b;
-}
-/* .section-title h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 60px);
-} */
-.section-title h2::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    width: calc(100% + 50px);
-    height: 3px;
-    background: #0563bb;
-    bottom: 0;
-}
-.section-title p {
-    margin-bottom: 0;
+/**
+* Disable aos animation delay on mobile devices
+*/
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
 }

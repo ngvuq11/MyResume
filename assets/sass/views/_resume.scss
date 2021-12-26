@@ -1,10 +1,12 @@
-
+/**
+* resume
+*/
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #45505b;
+    color: var(--text-color);
 }
 .resume .resume-item {
     padding: 0 0 20px 20px;
@@ -23,7 +25,8 @@
 }
 .resume .resume-item h5 {
     font-size: 16px;
-    background: #f7f8f9;
+    background: linear-gradient(90.06deg, #2cccff -4.45%, #22dfbf 104.12%);
+    border-radius: 6px;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -44,8 +47,8 @@
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    left: -9px;
+    left: -11px;
     top: 0;
-    background: #fff;
+    background: var(--background-body);
     border: 2px solid #0563bb;
 }

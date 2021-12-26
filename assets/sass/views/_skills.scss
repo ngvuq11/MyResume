@@ -1,3 +1,6 @@
+/**
+* skills
+*/
 .skills .progress {
     height: 60px;
     display: block;
@@ -11,7 +14,7 @@
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #45505b;
+    color: var(--text-color);
 }
 .skills .progress .skill .val {
     float: right;
@@ -25,4 +28,5 @@
     height: 10px;
     transition: 0.9s;
     background-color: #0563bb;
+    /* background: linear-gradient(90.06deg, #2cccff -4.45%, #22dfbf 104.12%); */
 }

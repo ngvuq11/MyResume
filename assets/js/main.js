@@ -1,5 +1,5 @@
 (function () {
-    "use strict";
+    ("use strict");
 
     /**
      * animation particles in hero sesstion
@@ -110,28 +110,48 @@
     particlesJS("particles-js", options);
 
     /**
-     * button switch theme
+     * button switch theme 1
      */
-    const toggleSwitch = document.querySelector(
-        '.theme-switch input[type="checkbox"]'
-    );
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme) {
-        document.documentElement.setAttribute("data-theme", currentTheme);
+    // const toggleSwitch = document.querySelector(
+    //     '.theme-switch input[type="checkbox"]'
+    // );
+    // const currentTheme = localStorage.getItem("theme");
+
+    // if (currentTheme) {
+    //     document.documentElement.setAttribute("data-theme", currentTheme);
+    //     if (currentTheme === "dark") {
+    //         toggleSwitch.checked = true;
+    //     }
+    // }
+    // toggleSwitch.addEventListener("change", (e) => {
+    //     if (e.target.checked) {
+    //         document.documentElement.setAttribute("data-theme", "dark");
+    //         localStorage.setItem("theme", "dark");
+    //     } else {
+    //         document.documentElement.setAttribute("data-theme", "light");
+    //         localStorage.setItem("theme", "light");
+    //     }
+    // });
+    /**
+     * button switch theme 2
+     */
+    const toggle = document.getElementById("theme-toggle");
+    const moonIcon = document.querySelector(".dark-switch");
+    const sunIcon = document.querySelector(".light-switch");
+    sunIcon.style.display = "none";
+    toggle.addEventListener("click", function () {
+        moonIcon.style.display = "none";
+        sunIcon.style.display = "";
+        const currentTheme =
+            document.documentElement.getAttribute("data-theme");
+        document.documentElement.setAttribute("data-theme", "dark");
+
         if (currentTheme === "dark") {
-            toggleSwitch.checked = true;
-        }
-    }
-    toggleSwitch.addEventListener("change", (e) => {
-        if (e.target.checked) {
-            document.documentElement.setAttribute("data-theme", "dark");
-            localStorage.setItem("theme", "dark");
-        } else {
             document.documentElement.setAttribute("data-theme", "light");
-            localStorage.setItem("theme", "light");
+            moonIcon.style.display = "";
+            sunIcon.style.display = "none";
         }
     });
-
     /**
      * Easy selector helper function
      */
@@ -213,6 +233,10 @@
         };
         window.addEventListener("load", toggleBacktotop);
         onscroll(document, toggleBacktotop);
+        backtotop.addEventListener("click", (e) => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
     }
     /**
      * Scroll with ofset on page load with hash links in the url

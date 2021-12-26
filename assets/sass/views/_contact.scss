@@ -1,3 +1,6 @@
+/**
+* contact
+*/
 .contact input {
     display: block;
     /* width: 100%; */
@@ -24,7 +27,7 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #45505b;
+    color: var(--text-color);
 }
 .contact .info p {
     padding: 0 0 0 60px;
@@ -34,7 +37,7 @@
 }
 .contact .info .email,
 .contact .info .phone {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .contact .info .email:hover i,
 .contact .info .address:hover i,
@@ -47,7 +50,7 @@
     background: var(--background-body);
 }
 .contact .php-email-form .form-group {
-    padding-bottom: 8px;
+    padding-bottom: 20px;
 }
 .contact .php-email-form .error-message {
     display: none;
@@ -99,14 +102,30 @@
     padding: 10px 12px;
 }
 .contact .php-email-form button[type="submit"] {
-    background: #0563bb;
+    background: linear-gradient(90.06deg, #2cccff -4.45%, #22dfbf 104.12%);
     border: 0;
+    outline: 0;
     padding: 10px 35px;
     color: #fff;
-    transition: 0.4s;
     border-radius: 50px;
+    font-size: 16px;
+    transition: all 0.25s linear;
+    position: relative;
+    z-index: 99999;
+    cursor: pointer;
 }
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type="submit"]::after {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    inset: 0;
+    width: 0;
+    height: 100%;
+    transition: all 0.2s linear;
+    z-index: -1;
+}
+.contact .php-email-form button[type="submit"]:hover::after {
+    width: 100%;
     background: #0678e3;
 }
 @-webkit-keyframes animate-loading {
@@ -125,6 +144,12 @@
         transform: rotate(360deg);
     }
 }
+@media screen and (max-width: 992px) {
+    .contact-form {
+        margin-top: 60px;
+    }
+}
+
 .form-control {
     display: block;
     width: 100%;

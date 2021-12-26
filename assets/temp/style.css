@@ -1128,7 +1128,7 @@ section {
 }
 .contact .info .email,
 .contact .info .phone {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .contact .info .email:hover i,
 .contact .info .address:hover i,
@@ -1141,7 +1141,7 @@ section {
     background: var(--background-body);
 }
 .contact .php-email-form .form-group {
-    padding-bottom: 8px;
+    padding-bottom: 20px;
 }
 .contact .php-email-form .error-message {
     display: none;
@@ -1237,7 +1237,7 @@ section {
 }
 @media screen and (max-width: 992px) {
     .contact-form {
-        margin-top: 20px;
+        margin-top: 60px;
     }
 }
 
