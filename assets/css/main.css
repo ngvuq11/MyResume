@@ -99,12 +99,12 @@ body.active::after {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scroll-bar);
   border-radius: 10px;
+  background: #7a86f0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ccc;
+  background: #414ebb;
 }
 
 /**
