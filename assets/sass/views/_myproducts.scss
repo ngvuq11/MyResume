@@ -54,7 +54,6 @@
             color: #000;
             background: #fff;
             cursor: pointer;
-            flex-shrink: 1;
             transition: all 0.25s linear;
             i {
                 font-size: 20px;
@@ -67,7 +66,6 @@
             bottom: 0;
             display: block;
             width: fit-content;
-            max-width: 125px;
             padding: 10px 20px;
             border-top-left-radius: 13px;
             border-bottom-right-radius: 13px;

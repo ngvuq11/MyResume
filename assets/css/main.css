@@ -884,7 +884,6 @@ header {
   color: #000;
   background: #fff;
   cursor: pointer;
-  flex-shrink: 1;
   transition: all 0.25s linear;
 }
 .product-list .product-item .product-view i {
@@ -897,7 +896,6 @@ header {
   bottom: 0;
   display: block;
   width: fit-content;
-  max-width: 125px;
   padding: 10px 20px;
   border-top-left-radius: 13px;
   border-bottom-right-radius: 13px;
