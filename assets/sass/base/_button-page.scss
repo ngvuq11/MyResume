@@ -3,7 +3,7 @@
 */
 .back-to-top {
     position: fixed;
-    z-index: 996;
+    z-index: 999;
     visibility: hidden;
     opacity: 0;
     right: 15px;
@@ -40,7 +40,7 @@
     position: fixed;
     bottom: 15px;
     right: 15px;
-    z-index: 999999;
+    z-index: 999;
     .theme-switch {
         display: inline-block;
         height: 34px;
@@ -106,7 +106,7 @@
     border: none;
     outline: none;
     background: linear-gradient(90.06deg, #2cccff -4.45%, #22dfbf 104.12%);
-    z-index: 99999999;
+    z-index: 9999;
     color: #fff;
     transition: all 0.25s linear;
     font-weight: 500;

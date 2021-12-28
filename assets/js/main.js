@@ -135,6 +135,7 @@
     /**
      * button switch theme 2
      */
+
     const toggle = document.getElementById("theme-toggle");
     const moonIcon = document.querySelector(".dark-switch");
     const sunIcon = document.querySelector(".light-switch");
@@ -252,7 +253,7 @@
     /**
      * Preloader
      */
-    let preloader = select("#preloader");
+    const preloader = select("#preloader");
     if (preloader) {
         window.addEventListener("load", () => {
             preloader.remove();
@@ -334,24 +335,4 @@
             }
         });
     });
-
-    on(
-        "click",
-        ".scrollto",
-        function (e) {
-            if (select(this.hash)) {
-                e.preventDefault();
-
-                let body = select("body");
-                if (body.classList.contains("mobile-nav-active")) {
-                    body.classList.remove("mobile-nav-active");
-                    let navbarToggle = select(".mobile-nav-toggle");
-                    navbarToggle.classList.toggle("bx-list");
-                    navbarToggle.classList.toggle("bx-x");
-                }
-                scrollto(this.hash);
-            }
-        },
-        true
-    );
 })();

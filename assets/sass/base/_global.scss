@@ -27,11 +27,8 @@
 */
 #preloader {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
+    inset: 0;
+    z-index: 99999999;
     overflow: hidden;
     background: #fff;
     &:before {
@@ -91,7 +88,7 @@ section {
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 12px;
             position: relative;
             color: var(--text-color);
             &::after {

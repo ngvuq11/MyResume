@@ -32,6 +32,12 @@
         }
         p:last-child {
             margin-bottom: 0;
+            text-align: justify;
         }
+    }
+}
+@media screen and (max-width: 992px) {
+    .content {
+        margin-top: 25px !important;
     }
 }
