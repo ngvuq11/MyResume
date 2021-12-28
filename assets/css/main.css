@@ -882,11 +882,10 @@ header {
   padding: 1rem 2rem;
   border-bottom-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
-  color: #fff;
-  background: inherit;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
+  color: #000;
+  background: #fff;
   cursor: pointer;
+  font-weight: 700;
 }
 .product-list .product-item .product-install {
   position: absolute;
@@ -899,6 +898,7 @@ header {
   border-bottom-right-radius: 1.3rem;
   background: linear-gradient(90.06deg, #f62682 -4.45%, #6f5cf1 104.12%);
   color: #fff;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 787px) {

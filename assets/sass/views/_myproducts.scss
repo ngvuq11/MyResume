@@ -21,7 +21,6 @@
             max-width: 10rem;
             margin-left: auto;
             margin-right: auto;
-            // padding-top: 100%;
         }
         .product-title {
             margin: 1.5rem 0;
@@ -50,13 +49,10 @@
             padding: 1rem 2rem;
             border-bottom-left-radius: 1.3rem;
             border-top-right-radius: 1.3rem;
-            // background: linear-gradient(90.06deg, #f62682 -4.45%, #6f5cf1 104.12%);
-            color: #fff;
-            // background-image: linear-gradient(to right bottom, #00aefd, #20e3b2);
-            background: inherit;
-            border-top: 2px solid #000;
-            border-right: 2px solid #000;
+            color: #000;
+            background: #fff;
             cursor: pointer;
+            font-weight: 700;
         }
         .product-install {
             position: absolute;
@@ -73,6 +69,7 @@
                 #6f5cf1 104.12%
             );
             color: #fff;
+            font-weight: 600;
         }
     }
 }
