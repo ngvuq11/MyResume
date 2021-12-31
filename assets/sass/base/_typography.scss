@@ -5,6 +5,7 @@ body {
     scroll-behavior: smooth;
     background-color: var(--background-body);
     position: relative;
+    overflow-x: hidden;
 }
 body.active::after {
     content: "";

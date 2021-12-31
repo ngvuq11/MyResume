@@ -35,6 +35,10 @@
             text-align: justify;
         }
     }
+    .img-fluid {
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+    }
 }
 @media screen and (max-width: 992px) {
     .content {

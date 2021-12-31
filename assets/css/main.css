@@ -75,6 +75,7 @@ body {
   scroll-behavior: smooth;
   background-color: var(--background-body);
   position: relative;
+  overflow-x: hidden;
 }
 
 body.active::after {
@@ -728,6 +729,10 @@ header {
   margin-bottom: 0;
   text-align: justify;
 }
+.about .img-fluid {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
 
 @media screen and (max-width: 992px) {
   .content {
@@ -834,7 +839,7 @@ header {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# product
 --------------------------------------------------------------*/
 .product-list {
   display: flex;
