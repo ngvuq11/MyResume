@@ -169,7 +169,7 @@
             }
         }
     };
-
+    // ------------------------------------------------
     /**
      * Easy on scroll event listener
      */
@@ -240,6 +240,7 @@
             }
         }
     });
+    // --------------------------------------------------------
 
     /**
      * Preloader
@@ -295,10 +296,11 @@
             mirror: false,
         });
     });
-    /**
-     * event mobile menu
-     */
+
     window.addEventListener("load", () => {
+        /**
+         * event mobile menu
+         */
         const btnNavigation = document.querySelector(".mobile-nav-toggle");
         const header = document.querySelector("#header");
         const menuItems = document.querySelectorAll(".nav-link");
@@ -318,11 +320,32 @@
             body.classList.remove("active");
         }
 
+        /**
+         * modal products
+         */
+        const showButtons = document.querySelectorAll(".product-view");
+        const modals = document.querySelector(".products-modal");
+        const closeModal = document.querySelector(".close-modal");
+
+        showButtons.forEach((item) =>
+            item.addEventListener("click", () => {
+                modals.style.display = "block";
+                body.classList.add("active");
+            })
+        );
+        closeModal.addEventListener("click", () => {
+            body.classList.remove("active");
+            modals.style.display = "none";
+        });
+        /**
+         * close outside
+         */
         document.addEventListener("click", function (e) {
             if (e.target.classList == "active") {
                 btnNavigation.classList.remove("button-nav-active");
                 header.classList.remove("nav-mobile-active");
                 body.classList.remove("active");
+                modals.style.display = "none";
             }
         });
     });

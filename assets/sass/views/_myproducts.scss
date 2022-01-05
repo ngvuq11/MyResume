@@ -79,6 +79,31 @@
         }
     }
 }
+.products-modal {
+    position: fixed;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+    width: 90%;
+    max-width: 70rem;
+    z-index: 999999;
+    border-radius: 1rem;
+    display: none;
+    .close-modal {
+        font-size: 1.8rem;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: #2cccff;
+    }
+    img {
+        border-radius: inherit;
+        aspect-ratio: 16 / 9;
+    }
+}
 @media screen and (max-width: 625px) {
     .product-list {
         flex-direction: column;
