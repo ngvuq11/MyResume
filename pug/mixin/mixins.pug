@@ -1,0 +1,15 @@
+mixin productItem(image, name, description, link)
+  .product-item(data-aos='fade-up')
+    img(src= image alt='' data-aos='zoom-in')
+    h2.product-title= name
+    p.product-desc= description
+    .product-view
+      i.bx.bx-show-alt
+    a.product-install(href= link target='_blank') Install now
+
+mixin skill(skillName, percent, val, maxVal)
+  .progress
+    span.skill= skillName
+      i.val= percent
+    .progress-bar-wrap
+      .progress-bar(role='progressbar' aria-valuenow= val aria-valuemin='0' aria-valuemax= maxVal)

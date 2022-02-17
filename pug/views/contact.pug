@@ -1,0 +1,36 @@
+section#contact.contact
+  .container(data-aos='fade-up')
+    .section-title
+      h2 Contact
+    .row.mt-1
+      .col-lg-4.l-4
+        .info
+          .address
+            i.bx.bxs-map
+            h4 Location:
+            p Da Nang, Viet Nam
+          .email
+            i.bx.bx-mail-send
+            h4 Email:
+            p ngvuquoc.17@gmail.com
+          .phone
+            i.bx.bxs-phone-call
+            h4 Call:
+            p +84 349172592
+      .l-8.col-lg-8.mt-5.mt-lg-0.contact-form
+        form.php-email-form.form-contact(action='#' method='POST' role='form')
+          .row
+            .col-md-6.m-6.form-group
+              input#name.form-control(type='text' name='name' placeholder='Your Name' required='')
+            .col-md-6.m-6.form-group.mt-3.mt-md-0
+              input#email.form-control(type='email' name='email' placeholder='Your Email' required='')
+          .form-group.mt-3
+            input#subject.form-control(type='text' name='subject' placeholder='Subject' required='')
+          .form-group.mt-3
+            textarea#message.form-control(name='message' rows='5' placeholder='Message' required='')
+          .my-3
+            .loading Loading
+            .error-message
+            .sent-message Your message has been sent. Thank you!
+          .btn-sumbit-contact
+            button(type='submit') Send Message

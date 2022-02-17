@@ -1,0 +1,31 @@
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-content {
+        max-width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+        img {
+            /* width: 90%; */
+            max-width: 100%;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        ion-icon {
+            color: white;
+            font-size: 60px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+    }
+}
