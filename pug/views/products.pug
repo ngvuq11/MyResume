@@ -1,14 +1,14 @@
-section#myproduct
-  .container(data-aos='fade-up')
-    .section-title
-      h2 My Products
-      p These are the products I created for the purpose of serving myself during my studies, I found it quite useful, so I developed it more broadly and released it, hoping to help everyone in the future. website development process.
-    .product-list(data-aos='fade-up')
-      +productItem('./assets/img/pngwing.com.png',
-        "W Contrast",
-        "W Contrast Theme for Visual Studio Code by ngvuq (FrontEnd Developer)",
-        'https://marketplace.visualstudio.com/items?itemName=ngvuq.w-contrast')
-      +productItem('./assets/img/pngwing.com.png',
-        "W Snippets",
-        "W Snippets Extension for FrontEnd Developer by ngvuq",
-        'https://marketplace.visualstudio.com/items?itemName=ngvuq.w-snippets')
+  section#myproduct
+    .container
+      .section-title(data-aos='fade-up')
+        h2 My Products
+        p These are the products I created for the purpose of serving myself during my studies, I found it quite useful, so I developed it more broadly and released it, hoping to help everyone in the future. website development process.
+      .product-list(data-aos='fade-up')
+        +productItem('./assets/img/pngwing.com.png',
+          "W Contrast",
+          "W Contrast Theme for Visual Studio Code by ngvuq (FrontEnd Developer)",
+          'https://marketplace.visualstudio.com/items?itemName=ngvuq.w-contrast')
+        +productItem('./assets/img/pngwing.com.png',
+          "W Snippets",
+          "W Snippets Extension for FrontEnd Developer by ngvuq",
+          'https://marketplace.visualstudio.com/items?itemName=ngvuq.w-snippets')

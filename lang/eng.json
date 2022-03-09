@@ -1,6 +1,10 @@
 {
-    "section-about-title": "ABOUT",
-    "section-skill-title": "SKILLS",
-    "section-resume-title": "RESUME",
-    "section-contact-title": "CONTACT"
+  "section-about-title": "ABOUT",
+  "section-skill-title": "SKILLS",
+  "section-resume-title": "RESUME",
+  "section-contact-title": "CONTACT",
+  "section-about-subtitle": "About Me",
+  "section-skill-subtitle": "Skills",
+  "section-resume-subtitle": "Resume",
+  "section-contact-subtitle": "Contact"
 }
