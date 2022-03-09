@@ -346,6 +346,7 @@
 
    /**
     * Animation on scroll
+    * ><
     */
    window.addEventListener('load', () => {
       AOS.init({
