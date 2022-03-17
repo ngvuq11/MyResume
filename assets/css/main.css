@@ -59,6 +59,10 @@ a:hover {
   text-decoration: none;
 }
 
+input {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -1030,19 +1034,13 @@ header {
   flex-shrink: 0;
 }
 
-/**
-* contact
-*/
-.contact input {
-  display: block;
-  /* width: 100%; */
-}
-
 .contact .info {
   width: 100%;
   background: var(--background-body);
 }
-
+.contact .info > div {
+  transition: all 0.3s linear;
+}
 .contact .info i {
   font-size: 20px;
   color: #0563bb;
@@ -1054,9 +1052,8 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
-
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
@@ -1064,19 +1061,16 @@ header {
   margin-bottom: 5px;
   color: var(--text-color);
 }
-
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
   color: #728394;
 }
-
 .contact .info .email,
 .contact .info .phone {
   margin-top: 50px;
 }
-
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
@@ -1088,11 +1082,9 @@ header {
   width: 100%;
   background: var(--background-body);
 }
-
 .contact .php-email-form .form-group {
   padding-bottom: 20px;
 }
-
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
@@ -1101,11 +1093,9 @@ header {
   padding: 15px;
   font-weight: 600;
 }
-
 .contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
-
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
@@ -1114,14 +1104,12 @@ header {
   padding: 15px;
   font-weight: 600;
 }
-
 .contact .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
-
 .contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -1134,22 +1122,18 @@ header {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-
 .contact .php-email-form input,
 .contact .php-email-form textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
-
 .contact .php-email-form input {
   height: 44px;
 }
-
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-
 .contact .php-email-form button[type=submit] {
   background: linear-gradient(90.06deg, #2cccff -4.45%, #22dfbf 104.12%);
   border: 0;
@@ -1163,7 +1147,6 @@ header {
   z-index: 99999;
   cursor: pointer;
 }
-
 .contact .php-email-form button[type=submit]::after {
   content: "";
   position: absolute;
@@ -1174,7 +1157,6 @@ header {
   transition: all 0.2s linear;
   z-index: -1;
 }
-
 .contact .php-email-form button[type=submit]:hover::after {
   width: 100%;
   background: #0678e3;
